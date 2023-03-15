@@ -1,0 +1,402 @@
+/* Set default font styles for the page */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  /* Style the Top bar */
+  .top-bar {
+    background-color: #1A1A2E;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    padding: 0 20px;
+  }
+  
+  .top-bar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .top-bar li {
+    margin-left: 20px;
+  }
+  
+  .top-bar a {
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+  
+  .top-bar i {
+    font-size: 18px;
+    margin-right: 5px;
+  }
+  
+
+  /* Style the navigation bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #eee;
+  }
+  
+  nav img {
+    height: 50px;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    color: #555;
+  }
+  
+  /* Hide the hamburger button on larger screens */
+  @media only screen and (min-width: 768px) {
+    nav #hamburger {
+      display: none;
+    }
+  }
+  
+  /* Style the dropdown menu */
+  nav .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: #eee;
+    z-index: 1;
+  }
+  
+  nav .dropdown-menu li {
+    margin: 10px;
+  }
+  
+  nav .dropdown-menu a {
+    color: #333;
+    font-weight: bold;
+  }
+  
+  nav .dropdown-menu a:hover {
+    color: #555;
+  }
+  
+  /* Show the dropdown menu when the hamburger button is clicked */
+  nav #hamburger:checked ~ .dropdown-menu {
+    display: block;
+  }
+  
+  /* Style the FAQ section container */
+  .faq {
+    background-color: #f8f8f8;
+    padding: 40px;
+  }
+  
+  /* Style the FAQ items */
+  .faq-item {
+    margin-bottom: 20px;
+  }
+  
+  .faq-item h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .faq-item p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  /* Style the FAQ cards */
+  .faq-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+  
+  .faq-card h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .faq-card p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  /* Style the page header and navigation */
+  header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .logo {
+    flex-basis: 25%;
+  }
+  
+  .logo img {
+    max-width: 100%;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 70%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    margin: 0 10px;
+  }
+  
+  .nav-links li a {
+    color: #333;
+    font-size: 18px;
+    text-decoration: none;
+  }
+  
+  .nav-links li.active a {
+    color: #ff8c00;
+    font-weight: bold;
+  }
+  
+  .burger {
+    display: none;
+  }
+  
+  /* Style the top bar */
+  .top-bar {
+    background-color: #333;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 0;
+  }
+  
+  .contact {
+    flex-basis: 50%;
+    text-align: center;
+  }
+  
+  .contact-number {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .social-icons {
+    flex-basis: 50%;
+    text-align: center;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    margin: 0 5px;
+  }
+  
+  .social-icons i {
+    color: #fff;
+    font-size: 20px;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    font-size: 14px;
+    padding: 40px 0;
+  }
+  
+  .footer-logo img {
+    max-width: 100%;
+  }
+  
+  .footer-links ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+  }
+
+
+/* Style the footer links */
+.footer-links li {
+    margin: 0 10px;
+    }
+    
+    .footer-links li a {
+    color: #fff;
+    text-decoration: none;
+    }
+    
+    /* Style the footer newsletter section */
+    .newsletter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    }
+    
+    .newsletter-form {
+    flex-basis: 50%;
+    padding-right: 20px;
+    }
+    
+    .newsletter-form h2 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    }
+    
+    .newsletter-form p {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 20px;
+    }
+    
+    .newsletter-form input[type="email"] {
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    }
+    
+    .newsletter-form input[type="submit"] {
+    background-color: #ff8c00;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease-in-out;
+    }
+    
+    .newsletter-form input[type="submit"]:hover {
+    background-color: #cc6f00;
+    }
+    
+    /* Style the footer social links */
+    .footer-social-links {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    }
+    
+    .footer-social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    }
+    
+    .footer-social-links i {
+    color: #fff;
+    font-size: 20px;
+    }
+    
+    /* Add media query for smaller screens /
+    @media screen and (max-width: 768px) {
+    / Hide navigation links and burger menu */
+    .nav-links {
+    display: none;
+    }
+    
+    .burger {
+    display: block;
+    cursor: pointer;
+    }
+    
+    /* Make the logo take up 100% of the width */
+    .logo {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+    }
+    
+    /* Style the burger menu */
+    .burger-menu {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    }
+    
+    .burger-menu li {
+    margin: 10px 0;
+    }
+    
+    .burger-menu li a {
+    color: #333;
+    font-size: 18px;
+    text-decoration: none;
+    }
+    
+    .burger-menu li.active a {
+    color: #ff8c00;
+    font-weight: bold;
+    }
+    
+    /* Show the burger menu when the burger is clicked */
+    .burger:checked + .burger-menu {
+    display: block;
+    }
+
+    
+    
+    
+    
+    
+    
+  
