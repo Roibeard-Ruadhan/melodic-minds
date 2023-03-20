@@ -1,43 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About | Wembley Music Therapy Services</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
+  <head>
+      <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- Bootstrap JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/e7d40c6c15.js" crossorigin="anonymous"></script>
+
+<!-- CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <title>Music Therapist - About</title>
+  </head>
 <body>
-  <!-- Navigation Bar -->
-  <nav>
-    <div class="nav-container">
-      <div class="logo-container">
-        <img src="img/logo.png" alt="Wembley Music Therapy Services Logo">
-      </div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <div class="hamburger-menu">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-      </div>
-    </div>
-  </nav>
+  <!-- Top bar -->
+     <div class="top-bar">
+       <div>
+         <span><i class="fas fa-phone"></i>+1 123 456 7890</span>
+         <span><i class="fas fa-envelope"></i>contact@example.com</span>
+       </div>
+       <ul>
+         <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+         <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+         <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+       </ul>
+     </div>
+     <!-- Navigation bar code goes here -->
+     <nav>
+         <img src="img/logo.png" alt="Music Therapist Logo">
+         <ul>
+           <li><a href="index.html">Home</a></li>
+           <li class="active"><a href="about.html">About</a></li>
+           <li><a href="services.html">Services</a></li>
+           <li><a href="faq.html">FAQ</a></li>
+           <li><a href="contact.html">Contact</a></li>
+         </ul>
+         <button id="hamburger">&#9776;</button>
+       </nav>
 
   <!-- About Section -->
-  <section class="about-section">
-    <div class="about-container">
-        <img src="img/niamh.webp" alt="">
-      <h1>MY STORY</h1>
-      <h2>When Words Fail.... Music Speaks</h2>
-      <p>I’m Niamh, founder of Wembley Music Therapy Services. A HCPC registered Music Therapist based in North London - here to guide you through the services provided.</p>
-      <p>I truly care about my clients’ well-being and guarantee a service that is catered to the clients needs throughout individual and group music therapy sessions.</p>
-      <p>Since 2016, I have provided a number of therapeutic services from Ireland, specialising in Autistic Spectrum Disorder, Dementia, Communication Disorders and Intellectual & Physical Disabilities.</p>
-      <p>Now located in Wembley, why not get in touch with me today for more information about individual and group music therapy sessions.</p>
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="img/niamh.webp" class="img-fluid about-img" alt="Niamh">
+        </div>
+        <div class="col-md-6 about-container">
+          <h2>MY STORY</h2>
+          <h3>When Words Fail.... Music Speaks</h3>
+          <p>I’m Niamh, founder of Wembley Music Therapy Services. A HCPC registered Music Therapist based in North London - here to guide you through the services provided.</p>
+          <p>I truly care about my clients’ well-being and guarantee a service that is catered to the clients needs throughout individual and group music therapy sessions.</p>
+          <p>Since 2016, I have provided a number of therapeutic services from Ireland, specialising in Autistic Spectrum Disorder, Dementia, Communication Disorders and Intellectual &amp; Physical Disabilities.</p>
+          <p>Now located in Wembley, why not get in touch with me today for more information about individual and group music therapy sessions.</p>
+        </div>
+      </div>
     </div>
   </section>
 
