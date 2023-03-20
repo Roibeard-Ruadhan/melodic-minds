@@ -44,7 +44,8 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #eee;
+    background-color: #2C245B;
+    color:#fff;
   }
   
   nav img {
@@ -62,12 +63,12 @@ nav {
   
   nav a {
     text-decoration: none;
-    color: #333;
+    color: #fff;
     font-weight: bold;
   }
   
   nav a:hover {
-    color: #555;
+    color: #E7467F;
   }
   
   /* Hide the hamburger button on larger screens */
@@ -543,3 +544,40 @@ footer p {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 }
 
+
+/* Style the FAQ items */
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.faq-item h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.faq-item p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Style the FAQ cards */
+.faq-card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.faq-card h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.faq-card p {
+  font-size: 18px;
+  line-height: 1.5;
+}

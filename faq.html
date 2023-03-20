@@ -1,46 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Wembley Music Therapy Services - FAQ</title>
-  <link rel="stylesheet" type="text/css" href="css/faq.css">
-</head>
+  <head>
+      <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- Bootstrap JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/e7d40c6c15.js" crossorigin="anonymous"></script>
+
+<!-- CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <title>Music Therapist - FAQ</title>
+  </head>
 <body>
-  <header>
-    <nav>
-      <div class="logo"><img src="img/logo.png" alt="Wembley Music Therapy Services"></div>
-      <ul class="nav-links">
-        <li>
-          <a href="index.html">Home</a>
-        </li>
-        <li>
-          <a href="services.html">Services</a>
-        </li>
-        <li>
-          <a href="about.html">About</a>
-        </li>
-        <li class="active">
-          <a href="faq.html">FAQ</a>
-        </li>
-        <li>
-          <a href="contact.html">Contact</a>
-        </li>
-      </ul>
-      <div class="burger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-      </div>
-    </nav>
-    <div class="top-bar">
-      <div class="contact">
-        <span class="contact-number">+44 123 456 7890</span> <span class="contact-email">info@wembleymusictherapy.com</span>
-      </div>
-      <div class="social-icons">
-        <a href="#"></a> <a href="#"></a> <a href="#"></a>
-      </div>
+   <!-- Top bar -->
+   <div class="top-bar">
+    <div>
+      <span><i class="fas fa-phone"></i>+353 87 614 8604</span>
+      <span><i class="fas fa-envelope"></i>info@melodicminds.ie</span>
     </div>
-  </header>
+    <ul>
+      <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+    </ul>
+  </div>
+  <!-- Navigation bar code goes here -->
+  <nav>
+      <img src="img/logo.png" alt="Music Therapist Logo">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li class="active"><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button id="hamburger">&#9776;</button>
+  </nav>
+  <!-- FAQ content Slideshow -->
   <main>
     <section class="faq">
       <div class="container">
@@ -76,34 +76,39 @@
       </div>
     </section>
   </main>
+
+  <!-- Footer -->
   <footer>
-    <div class="footer-logo"><img src="img/footer-logo.png" alt="Wembley Music Therapy Services"></div>
-    <div class="footer-links">
-      <ul>
-        <li>
-          <a href="index.html">Home</a>
-        </li>
-        <li>
-          <a href="services.html">Services</a>
-        </li>
-        <li>
-          <a href="about.html">About</a>
-        </li>
-        <li>
-          <a href="faq.html">FAQ</a>
-        </li>
-        <li>
-          <a href="contact.html">Contact</a>
-        </li>
-      </ul>
-    </div>
-    <div class="footer-contact">
-      <ul>
-        <li>123 Main St, Wembley, London</li>
-        <li>+44 123 456 7890</li>
-        <li>info@wembleymusictherapy.com</li>
-      </ul>
+    <div class="guitar-shape"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-6">
+          <h4>Address</h4>
+          <p>123 Music Therapy Street<br>London, UK</p>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <h4>Links</h4>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <h4>Contact</h4>
+          <p>Phone: 123-456-7890<br>Email: info@musictherapy.com</p>
+        </div>
+      </div>
     </div>
   </footer>
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const navUL = document.querySelector("nav ul");
+    
+    hamburger.addEventListener("click", () => {
+      navUL.classList.toggle("show");
+    });
+    </script>
 </body>
 </html>
