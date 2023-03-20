@@ -303,7 +303,7 @@ nav {
 
 /* footer */
 footer {
-  background-color: #242424;
+  background-color: #2C245B;
   color: #fff;
   padding: 40px 0;
   position: relative;
@@ -323,9 +323,10 @@ footer {
   z-index: 1;
 }
 
-.container {
+.footer-container {
   z-index: 2;
   position: relative;
+  background-color: #2C245B;
 }
 
 footer h4 {
