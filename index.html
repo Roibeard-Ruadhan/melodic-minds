@@ -121,6 +121,62 @@
           </div>
         </div>
       </section>
+      <!-- Services Section -->
+      <div class="services-container">
+        <div class="services-header">
+          <h2>Our Services</h2>
+          <div class="services-btns">
+            <button id="services-btn-1" class="active">Service 1</button>
+            <button id="services-btn-2">Service 2</button>
+          </div>
+        </div>
+        <div class="services-sections">
+          <div class="services-section services-section-1">
+            <div class="service-card">
+              <img src="img/017b25bfbcef4497a8a9f798a242f000.webp" alt="Service 1">
+              <h3>Service 1</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <a href="#">Learn more</a>
+            </div>
+            <div class="service-card">
+              <img src="img/130c782673388151e5f1479317d80a38_JPG.webp" alt="Service 2">
+              <h3>Service 2</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <a href="#">Learn more</a>
+            </div>
+            <div class="service-card">
+              <img src="img/happy-g3be552501_1920.jpg" alt="Service 3">
+              <h3>Service 3</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <a href="#">Learn more</a>
+            </div>
+          </div>
+          <div class="services-section services-section-2 hidden">
+            <div class="service-card">
+              <img src="img/Man Playing Guitar.webp" alt="Service 4">
+              <h3>Service 4</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <a href="#">Learn more</a>
+            </div>
+            <div class="service-card">
+              <img src="img/Music Class.webp" alt="Service 5">
+              <h3>Service 5</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <a href="#">Learn more</a>
+            </div>
+            <div class="service-card">
+              <img src="img/Piano B&W.webp" alt="Service 6">
+              <h3>Service 6</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <a href="#">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+        
+      
       <section id="about">
         <div class="container">
           <div class="row">
@@ -279,8 +335,40 @@ showSlide(slideIndex);
 
 
 
+// Services button function
+
+
+const servicesBtn1 = document.getElementById("services-btn-1");
+const servicesBtn2 = document.getElementById("services-btn-2");
+
+servicesBtn1.addEventListener("click", function() {
+  showServices(1);
+  servicesBtn1.classList.add("active");
+  servicesBtn2.classList.remove("active");
+});
+
+servicesBtn2.addEventListener("click", function() {
+  showServices(2);
+  servicesBtn1.classList.remove("active");
+  servicesBtn2.classList.add("active");
+});
+
+function showServices(servicesSet) {
+  const servicesSection1 = document.querySelector(".services-section-1");
+  const servicesSection2 = document.querySelector(".services-section-2");
+
+  if (servicesSet === 1) {
+    servicesSection1.classList.remove("hidden");
+    servicesSection2.classList.add("hidden");
+  } else if (servicesSet === 2) {
+    servicesSection1.classList.add("hidden");
+    servicesSection2.classList.remove("hidden");
+  }
+}
+
 
 </script>
+
     
   </body>
 </html>
