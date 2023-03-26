@@ -138,10 +138,10 @@
           </div>
         </div>
       </section>
-
+      <!-- FAQ Slideshow -->
       <section class="faq-section">
         <div class="faq-container">
-          <div class="faq-slide">
+          <div class="faq-slide active">
             <h3>What is music therapy?</h3>
             <p>Music therapy is a type of therapy that uses music to address physical, emotional, cognitive, and social needs 
               of individuals of all ages. It involves creating, singing, moving to, and/or listening to music under the guidance 
@@ -215,66 +215,69 @@
       navUL.classList.toggle("show");
     });
 
-
 // Get the FAQ slideshow container element
-const faqSlideshowContainer = document.querySelector('.faq-slideshow-container');
-
-// Get the FAQ slides and dots
 const faqSlides = document.querySelectorAll('.faq-slide');
-const faqDots = document.querySelectorAll('.faq-dot');
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
+let slideIndex = 0;
+let slideInterval;
 
-// Set initial slide and dot
-let currentSlide = 0;
-faqSlides[currentSlide].classList.add('active');
-faqDots[currentSlide].classList.add('active');
+function showSlide(n) {
+  // Reset the timer interval
+  clearInterval(slideInterval);
 
-// Add click event listeners to the dots
-faqDots.forEach((dot, index) => {
-  dot.addEventListener('click', () => {
-    // Remove active class from current slide and dot
-    faqSlides[currentSlide].classList.remove('active');
-    faqDots[currentSlide].classList.remove('active');
-    // Set current slide and dot to the clicked one
-    currentSlide = index;
-    // Add active class to new slide and dot
-    faqSlides[currentSlide].classList.add('active');
-    faqDots[currentSlide].classList.add('active');
-  });
-});
+  // Hide all slides
+  for (let i = 0; i < faqSlides.length; i++) {
+    faqSlides[i].classList.remove('active');
+    faqSlides[i].style.opacity = 0;
+  }
 
-// Set interval to automatically change slides every 5 seconds
-let slideshowInterval = setInterval(() => {
-  // Remove active class from current slide and dot
-  faqSlides[currentSlide].classList.remove('active');
-  faqDots[currentSlide].classList.remove('active');
-  // Move to next slide or go back to first slide if at end
-  currentSlide = (currentSlide + 1) % faqSlides.length;
-  // Add active class to new slide and dot
-  faqSlides[currentSlide].classList.add('active');
-  faqDots[currentSlide].classList.add('active');
-}, 5000);
+  // Loop to the beginning if at end of slides
+  if (n >= faqSlides.length) {
+    slideIndex = 0;
+  } else if (n < 0) {
+    slideIndex = faqSlides.length - 1;
+  } else {
+    slideIndex = n;
+  }
 
-// Stop interval when user clicks on a dot or hovers over a slide
-faqSlideshowContainer.addEventListener('click', () => {
-  clearInterval(slideshowInterval);
-});
-faqSlides.forEach(slide => {
-  slide.addEventListener('mouseover', () => {
-    clearInterval(slideshowInterval);
-  });
-  slide.addEventListener('mouseleave', () => {
-    slideshowInterval = setInterval(() => {
-      // Remove active class from current slide and dot
-      faqSlides[currentSlide].classList.remove('active');
-      faqDots[currentSlide].classList.remove('active');
-      // Move to next slide or go back to first slide if at end
-      currentSlide = (currentSlide + 1) % faqSlides.length;
-      // Add active class to new slide and dot
-      faqSlides[currentSlide].classList.add('active');
-      faqDots[currentSlide].classList.add('active');
-    }, 5000);
-  });
-});
+  // Show current slide
+  faqSlides[slideIndex].classList.add('active');
+  fadeIn(faqSlides[slideIndex]);
+
+  // Set timer interval to automatically move to the next slide every 5 seconds
+  slideInterval = setInterval(() => {
+    moveToNextSlide();
+  }, 5000);
+}
+
+function moveToNextSlide() {
+  showSlide(slideIndex + 1);
+}
+
+function moveToPrevSlide() {
+  showSlide(slideIndex - 1);
+}
+
+function fadeIn(element) {
+  let op = 0;
+  const timer = setInterval(function () {
+    if (op >= 1) clearInterval(timer);
+    element.style.opacity = op;
+    op += 0.1;
+  }, 50);
+}
+
+// Move to next slide on clicking next button
+nextBtn.addEventListener('click', moveToNextSlide);
+
+// Move to previous slide on clicking previous button
+prevBtn.addEventListener('click', moveToPrevSlide);
+
+// Show first slide and start timer interval
+showSlide(slideIndex);
+
+
 
 
 </script>
