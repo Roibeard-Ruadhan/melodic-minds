@@ -432,8 +432,8 @@ footer p {
   margin-bottom: 24px;
 }
 
-/* Style for the services-section  page */
-.services-section  {
+/* Style for the services page */
+.services-more  {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 20px;
@@ -441,13 +441,13 @@ footer p {
 }
 
 /* Style for the service cards */
-.service-card {
+.service-card-more {
   max-width: 350px;
   text-align: center;
 }
 
 /* Style for the service card images */
-.service-card img {
+.service-card-more img {
   max-width: 100%;
   height: auto;
 }
