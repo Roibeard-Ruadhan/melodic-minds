@@ -209,13 +209,13 @@ nav {
 
 .faq-navigation {
   display: flex;
-  justify-content: center;
-  margin-top: 30px;
+  justify-content: space-evenly;
+  margin-top: 20px;
 }
 
 .prev-btn,
 .next-btn {
-  background-color: #333;
+  background-color: #E7467F;
   border: none;
   color: #fff;
   font-size: 24px;
@@ -226,7 +226,7 @@ nav {
 
 .prev-btn:hover,
 .next-btn:hover {
-  background-color: #555;
+  background-color: #2C245B;
 }
 
 
