@@ -202,6 +202,105 @@
       hamburger.addEventListener("click", () => {
         navUL.classList.toggle("show");
       });
-      </script>
+
+
+// Get the FAQ slideshow container element
+const faqSlides = document.querySelectorAll('.faq-slide');
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
+let slideIndex = 0;
+let slideInterval;
+
+function showSlide(n) {
+  // Reset the timer interval
+  clearInterval(slideInterval);
+
+  // Hide all slides
+  for (let i = 0; i < faqSlides.length; i++) {
+    faqSlides[i].classList.remove('active');
+    faqSlides[i].style.opacity = 0;
+  }
+
+  // Loop to the beginning if at end of slides
+  if (n >= faqSlides.length) {
+    slideIndex = 0;
+  } else if (n < 0) {
+    slideIndex = faqSlides.length - 1;
+  } else {
+    slideIndex = n;
+  }
+
+  // Show current slide
+  faqSlides[slideIndex].classList.add('active');
+  fadeIn(faqSlides[slideIndex]);
+
+  // Set timer interval to automatically move to the next slide every 5 seconds
+  slideInterval = setInterval(() => {
+    moveToNextSlide();
+  }, 5000);
+}
+
+function moveToNextSlide() {
+  showSlide(slideIndex + 1);
+}
+
+function moveToPrevSlide() {
+  showSlide(slideIndex - 1);
+}
+
+function fadeIn(element) {
+  let op = 0;
+  const timer = setInterval(function () {
+    if (op >= 1) clearInterval(timer);
+    element.style.opacity = op;
+    op += 0.1;
+  }, 50);
+}
+
+// Move to next slide on clicking next button
+nextBtn.addEventListener('click', moveToNextSlide);
+
+// Move to previous slide on clicking previous button
+prevBtn.addEventListener('click', moveToPrevSlide);
+
+// Show first slide and start timer interval
+showSlide(slideIndex);
+
+
+
+// Services button function
+
+
+const servicesBtn1 = document.getElementById("services-btn-1");
+const servicesBtn2 = document.getElementById("services-btn-2");
+
+servicesBtn1.addEventListener("click", function() {
+  showServices(1);
+  servicesBtn1.classList.add("active");
+  servicesBtn2.classList.remove("active");
+});
+
+servicesBtn2.addEventListener("click", function() {
+  showServices(2);
+  servicesBtn1.classList.remove("active");
+  servicesBtn2.classList.add("active");
+});
+
+function showServices(servicesSet) {
+  const servicesSection1 = document.querySelector(".services-section-1");
+  const servicesSection2 = document.querySelector(".services-section-2");
+
+  if (servicesSet === 1) {
+    servicesSection1.classList.remove("hidden");
+    servicesSection2.classList.add("hidden");
+  } else if (servicesSet === 2) {
+    servicesSection1.classList.add("hidden");
+    servicesSection2.classList.remove("hidden");
+  }
+}
+
+
+</script>
+
   </body>
 </html>

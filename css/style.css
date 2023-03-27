@@ -119,8 +119,10 @@ nav {
   }
 
 /* services-section  section */
-/* Add space at the top and bottom of the services-section  section */
+/* Add space at the top and bottom of the services-section */
 #services-section  {
+  display: flex;
+  flex-wrap: wrap;
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -148,6 +150,9 @@ nav {
 
 /* Add a musical vibe to the cards */
 .card-body {
+  flex: 1;
+  margin: 10px;
+  max-width: 300px;
   background-color: rgba(255, 255, 255, 0.8);
   transform: translateY(-10px);
   transition: all 0.2s ease-in-out;
@@ -649,6 +654,9 @@ footer p {
 }
 
 .service-card {
+  flex: 1;
+  margin: 10px;
+  max-width: 300px;
   width: calc(100% / 3 - 30px);
   margin: 15px;
   padding: 30px;
@@ -704,3 +712,47 @@ footer p {
     width: calc(50% - 20px);
   }
 }
+
+
+
+body {
+  margin:0;
+  padding:0;
+}
+
+.navbar {
+  background-color: #fff;
+  padding: 1rem;
+}
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+.navbar-brand img {
+  height: 2rem;
+}
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+.navbar-toggler-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #333;
+  border-radius: 2px;
+}
+.navbar-nav {
+  margin-top: 1rem;
+}
+.nav-link {
+  color: #333;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  border-radius: 2px;
+}
+.nav-link:hover {
+  background-color: #333;
+  color: #fff;
+}
+
