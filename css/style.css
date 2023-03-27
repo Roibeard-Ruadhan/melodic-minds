@@ -758,3 +758,36 @@ body {
   color: #fff;
 }
 
+
+/* Hide hamburger menu for screen size over 666px */
+.hamburger {
+  display: none;
+}
+/* Styles for hamburger menu for screen sizes 666px and down */
+/* Adapted to the tutorial found on https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci */
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: rgb(255, 255, 255);
+}
+
+    /* Display hamburger menu */
+    /* Taken from https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci */
+    .hamburger {
+      display: block;
+      cursor: pointer;
+ }
+  .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+ }
+  .hamburger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+ }
+  .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+ }
+ 

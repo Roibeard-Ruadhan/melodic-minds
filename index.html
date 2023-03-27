@@ -24,7 +24,9 @@
 
 <!-- CSS -->
     <link href="css/style.css" rel="stylesheet">
+    
     <title>Music Therapist - Home</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
   </head>
   <body>
  <!-- Top bar -->
@@ -50,7 +52,12 @@
           <li><a href="contact.html">Contact</a></li>
           <li><a href="test.html">Test</a></li>
         </ul>
-        <button id="hamburger">&#9776;</button>
+        <!-- Hamburger menu for smartphones: adapted on the tutorial followed on https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci -->
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
     </nav>
       <header>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -309,13 +316,6 @@
       </footer>
       
     <script>
-    const hamburger = document.getElementById("hamburger");
-    const navUL = document.querySelector("nav ul");
-    
-    hamburger.addEventListener("click", () => {
-      navUL.classList.toggle("show");
-    });
-
 // Get the FAQ slideshow container element
 const faqSlides = document.querySelectorAll('.faq-slide');
 const prevBtn = document.querySelector('.prev-btn');
@@ -412,6 +412,30 @@ function showServices(servicesSet) {
 }
 
 
+</script>
+
+<!-- Font awesome script -->
+<script src="https://kit.fontawesome.com/1705e36da1.js" crossorigin="anonymous"></script>
+<!-- dev.to script for hamburger menu for small screens -->
+<script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-flex-container");
+    
+    hamburger.addEventListener("click", mobileMenu);
+    
+    function mobileMenu() {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+    }
+    // To close the hamburger menu when we click a link
+    const navLink = document.querySelectorAll(".nav-link");
+    
+    navLink.forEach(n => n.addEventListener("click", closeMenu));
+    
+    function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+    }
 </script>
 
     
