@@ -19,6 +19,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/e7d40c6c15.js" crossorigin="anonymous"></script>
 
@@ -44,19 +46,16 @@
     <!-- Navigation bar code goes here -->
     <nav>
         <img src="img/logo.png" alt="Music Therapist Logo">
-        <ul>
+        <ul class="nav-links">
           <li class="active"><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="faq.html">FAQ</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li><a href="test.html">Test</a></li>
         </ul>
         <!-- Hamburger menu for smartphones: adapted on the tutorial followed on https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci -->
-        <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
+        <div class="burger">
+          <i class="fas fa-bars"></i>
         </div>
     </nav>
       <header>
@@ -314,6 +313,13 @@
           </div>
         </div>
       </footer>
+
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script>
+        $(document).ready(function() {
+        $('.navbar-collapse').css('max-height', $(window).height() - $('.navbar-header').height() + 'px');
+      });
+      </script>
       
     <script>
 // Get the FAQ slideshow container element
@@ -418,7 +424,7 @@ function showServices(servicesSet) {
 <script src="https://kit.fontawesome.com/1705e36da1.js" crossorigin="anonymous"></script>
 <!-- dev.to script for hamburger menu for small screens -->
 <script>
-    const hamburger = document.querySelector(".hamburger");
+    const hamburger = document.querySelector(".burger");
     const navMenu = document.querySelector(".nav-flex-container");
     
     hamburger.addEventListener("click", mobileMenu);
