@@ -106,9 +106,24 @@ body {
   
   /* Hide the hamburger button on larger screens */
   @media only screen and (min-width: 768px) {
-    nav #hamburger {
+    nav .burger {
       display: none;
     }
+  }
+
+  /* Hide the hamburger button on larger screens */
+  @media only screen and (max-width: 768px) {
+    nav ul {
+      display: none;
+    }
+
+    .contact-info :first-child {
+      display: none;
+    }
+    .social-info {
+      justify-content: center!important;
+    }
+
   }
   
   /* Style the dropdown menu */
@@ -135,7 +150,7 @@ body {
   }
   
   /* Show the dropdown menu when the hamburger button is clicked */
-  nav #hamburger:checked ~ .dropdown-menu {
+  nav #burger:checked ~ .dropdown-menu {
     display: block;
   }
   
