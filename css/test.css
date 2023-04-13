@@ -1,0 +1,152 @@
+/* General styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: Arial, sans-serif;
+  }
+  /* Header styles */
+  header {
+    background-color: #333;
+    color: #fff;
+  }
+
+  .top-bar {
+    background-color: rgb(139, 0, 104);
+
+
+  }
+  
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.882);
+    color: #333;
+  }
+
+  nav.sticky {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
+  }
+  
+  nav ul {
+    display: flex;
+    color: #333;
+  }
+  
+  nav img {
+    height: 50px;
+  }
+  
+  .hamburger {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+  }
+  
+  .hamburger .line {
+    width: 100%;
+    height: 4px;
+    background-color: black;
+  }
+  
+  @media (max-width: 768px) {
+    .top-bar {
+      display: none;
+    }
+    .hamburger {
+      display: flex;
+    }
+  
+    nav ul {
+      display: none;
+    }
+  }
+  
+  /* Hero section styles */
+  .hero {
+    background-image: url('/img/class.webp');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-text {
+    text-align: center;
+    color: #fff;
+  }
+  .hero-text h2 {
+    font-size: 4rem;
+    margin-bottom: 1em;
+  }
+  .hero-text p {
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+  }
+  .hero-text button {
+    background-color: #fff;
+    color: #333;
+    font-size: 1.2rem;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  .hero-text button:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  /* Other section styles */
+  section {
+    padding: 2em;
+  }
+  section h2 {
+    font-size: 2rem;
+    margin-bottom: 1em;
+  }
+  section p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 1em;
+  }
+  section ul {
+    list-style: none;
+  }
+  section li {
+    margin-bottom: 1em;
+  }
+  /* Footer styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+  }
+
+
+
+  /* Make all images in the carousel responsive */
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  background-size: cover;
+}
+
+/* Make all carousel items the same height */
+.carousel-item {
+  height:70vh; /* Change this value to adjust the height of the carousel */
+}

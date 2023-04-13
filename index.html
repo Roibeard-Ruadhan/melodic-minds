@@ -32,7 +32,7 @@
   </head>
   <body>
  <!-- Top bar -->
- <section class="header nav-scroll">
+ <section>
     <div class="top-bar">
       <div>
         <span><i class="fas fa-phone"></i>+353 87 614 8604</span>
@@ -45,14 +45,16 @@
       </ul>
     </div>
     <!-- Navigation bar code goes here -->
-    <nav>
+    <nav class="navbar nav-scroll">
         <img src="img/logo.png" alt="Music Therapist Logo">
         <ul class="nav-links">
           <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
+          <li nav-scroll><a href="about.html">About</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="faq.html">FAQ</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <li><a href="ok.html">OK</a></li>
+
         </ul>
         <!-- Hamburger menu for smartphones: adapted on the tutorial followed on https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci -->
         <div class="burger">
@@ -427,16 +429,18 @@ function showServices(servicesSet) {
     }
 </script>
 <script>
-const scroll = document.querySelector(".header");
+const topBar = document.querySelector('.top-bar');
+let prevScrollpos = window.pageYOffset;
 
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 50) {
-    scroll.classList.add('nav-scroll');
-  } else if (window.scrollY <=50) {
-    scroll.classList.remove('nav-scroll');
+window.onscroll = function() {
+  let currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    topBar.style.top = "0";
+  } else {
+    topBar.style.top = "-50px";
   }
-});
-
+  prevScrollpos = currentScrollPos;
+}
 
 </script>
   </body>

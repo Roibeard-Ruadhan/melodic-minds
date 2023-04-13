@@ -1,4 +1,9 @@
 /* Set the default font family and color */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
     font-family: Arial, sans-serif;
     color: #333;
@@ -39,13 +44,39 @@ body {
   
 
   /* Style the navigation bar */
-nav {
+.navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #fff;
-    color:#2C245B;
+    align-items: right;
+    padding: 10 20px;
+    background-color: transparent;
+    transition: background-color 0.5s ease-in-out;
+    color:#fff;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    transition: all .00001s;
+  }
+
+  .nav-links a {
+    color: white;
+    transition: color 0.5s ease-in-out;
+  }
+
+
+  .navbar.scrolled {
+    background-color: white;
+  }
+  /* .nav-scroll {
+    top: 0;
+    background-color: #fff!important;
+    color: #E7467F!important;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    display: none top-bar;
+  } */
+
+  .navbar.scrolled .nav-links a {
+    color: black;
   }
   
   nav img {
@@ -55,6 +86,7 @@ nav {
   nav ul {
     display: flex;
     list-style: none;
+    column-gap: .2rem;
   }
   
   nav li {
@@ -63,7 +95,7 @@ nav {
   
   nav a {
     text-decoration: none;
-    color: #2C245B;
+    color: #ffffff;
     font-weight: bold;
   }
   
@@ -107,17 +139,18 @@ nav {
     display: block;
   }
   
-/* Make all images in the carousel responsive */
-.carousel-item img {
+
+  .hero img {
     width: 100%;
-    height: auto;
-    background-size: cover;
+    height: 70vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    filter: brightness(0.7);
   }
-  
-  /* Make all carousel items the same height */
-  .carousel-item {
-    height:70vh; /* Change this value to adjust the height of the carousel */
-  }
+
 
 /* services-section  section */
 /* Add space at the top and bottom of the services-section */
@@ -778,7 +811,7 @@ body {
     /* Display hamburger menu */
     /* Taken from https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci */
     .hamburger {
-      display: block;
+      display: flex;
       cursor: pointer;
  }
   .hamburger.active .bar:nth-child(2) {

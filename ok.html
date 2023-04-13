@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/ok.css" />
+    <title>Responsive Navbar</title>
+  </head>
+  <body>
+        <!-- Navigation bar code goes here -->
+        <nav class="navbar">
+            <img src="img/logo.png" alt="Music Therapist Logo">
+            <ul class="links">
+              <li><a href="index.html">Home</a></li>
+              <li nav-scroll><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li class="active"><a href="ok.html">OK</a></li>
+              <li><a href="#" class="action_btn">Join Class</a></li>
+    
+            </ul>
+            <a href="#" class="action_btn">Join Class</a>
+            <!-- Hamburger menu for smartphones: adapted on the tutorial followed on https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci -->
+            <div class="toggle_btn">
+              <i class="fa solid fa-bars"></i>
+            </div>
+
+            <div class="dropdown_menu">
+              <li><a href="index.html">Home</a></li>
+              <li nav-scroll><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li class="active"><a href="ok.html">OK</a></li>
+              <li><a href="#" class="action_btn">Join Class</a></li>
+            </div>
+        </nav>
+        <script>
+            const toggleBtn = document.querySelector('.toggle_btn')
+        </script>
+  </body>
+</html>
