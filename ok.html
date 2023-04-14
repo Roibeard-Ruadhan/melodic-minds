@@ -1,44 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/ok.css" />
-    <title>Responsive Navbar</title>
+    <!-- Meta content -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Music studio offering healing through Music therapy by therapist Niamh Corkery in Limerick & 
+    Tipperary, Ireland">
+    <meta name="keywords" content="music therapy, music studio, music classes, music, healing, trauma, art, niamh corkery, limerick, 
+    tipperary, ireland, therapist, therapy, instruments, playing piano, guitar, singing, love, heart, comfort, health, qualified music therapist, 
+    experienced, mental health, creative expression, stress relief, personal growth, trauma recovery, children and adults, emotional well-being,
+    mindfulness, self-discovery, non-verbal communication, professional services">
+    <meta name="author" content="roibeard_ruadhan">
+      <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- Bootstrap JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- jQuery -->
+    <link  href="https://code.jquery.com/jquery-3.6.0.min.js" />
+<!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/8848882185.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link rel="shortcut icon" href="">
+<!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="css/ok.css">
+    <title>OK Page</title>
   </head>
   <body>
         <!-- Navigation bar code goes here -->
-        <nav class="navbar">
-            <img src="img/logo.png" alt="Music Therapist Logo">
+      <header>
+          <div class="navbar">
+            <a href="index.html"><img class="logo" src="img/logo.png" alt="Music Therapist Logo"></a>
             <ul class="links">
               <li><a href="index.html">Home</a></li>
-              <li nav-scroll><a href="about.html">About</a></li>
+              <li><a href="about.html">About</a></li>
               <li><a href="services.html">Services</a></li>
               <li><a href="faq.html">FAQ</a></li>
               <li><a href="contact.html">Contact</a></li>
               <li class="active"><a href="ok.html">OK</a></li>
               <li><a href="#" class="action_btn">Join Class</a></li>
-    
             </ul>
             <a href="#" class="action_btn">Join Class</a>
-            <!-- Hamburger menu for smartphones: adapted on the tutorial followed on https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci -->
+            <!-- Hamburger menu -->
             <div class="toggle_btn">
-              <i class="fa solid fa-bars"></i>
+              <i id="bar" class="fa-solid fa-bars"></i>
             </div>
+          </div>
 
-            <div class="dropdown_menu">
+          <div class="dropdown_menu">
+            <ul>
               <li><a href="index.html">Home</a></li>
-              <li nav-scroll><a href="about.html">About</a></li>
+              <li><a href="about.html">About</a></li>
               <li><a href="services.html">Services</a></li>
               <li><a href="faq.html">FAQ</a></li>
               <li><a href="contact.html">Contact</a></li>
               <li class="active"><a href="ok.html">OK</a></li>
               <li><a href="#" class="action_btn">Join Class</a></li>
-            </div>
-        </nav>
-        <script>
-            const toggleBtn = document.querySelector('.toggle_btn')
-        </script>
+            </ul>
+          </div>
+      </header>
+
+      <main>
+        <section id="hero">
+          <h1>Welcome</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, <br> 
+            adipisicing elit. Labore aperiam cum ut aut 
+          </p>
+        </section>
+      </main>
+
+
+
+      
+      <script>
+          const toggleBtn = document.querySelector('.toggle_btn')
+          const toggleBtnIcon = document.querySelector('.toggle_btn i')
+          const dropDownMenu = document.querySelector('.dropdown_menu')
+
+          toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+              ? 'fa-solid fa-xmark'
+              : 'fa-solid fa-bars'
+          }
+      </script>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   </body>
 </html>
