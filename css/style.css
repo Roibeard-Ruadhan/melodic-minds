@@ -199,7 +199,7 @@ section#hero {
 /* FOOTER */
 
 .footer {
-    background-color: lightgray;
+    background-color: #2C245B;
     padding: 70px 0;
 }
 
@@ -223,12 +223,11 @@ foooter .row {
 }
 
 .footer-col h4 {
-    color: #000;
+    color: #9796B0;
     margin-bottom: 30px;
     text-transform: capitalize;
     font-weight: 500;
     position: relative;
-    background-color: rgb(255, 255, 255);
 }
 
 .footer-col h4::before {
@@ -238,7 +237,7 @@ foooter .row {
     height: 2px;
     position: absolute;
     height: 2px;
-    background-color: rgb(43, 0, 255);
+    background-color: #E7467F;
     box-sizing: border-box;
     bottom: -10px;
 }
@@ -276,8 +275,8 @@ foooter .row {
 }
 
 .footer-col .social-links a:hover{
-    color: aqua;
-    background-color: #fff;
+    color: #E7467F;
+    background-color: #2C245B;
 }
 
 .row hr {
@@ -287,6 +286,7 @@ foooter .row {
 .copyright {
     align-items: center;
     justify-content: center!important;
+    color: #9796B0;
 }
 
 @media(max-width: 767px){
