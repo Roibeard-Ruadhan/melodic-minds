@@ -20,63 +20,61 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link  href="https://code.jquery.com/jquery-3.6.0.min.js" />
 <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/e7d40c6c15.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8848882185.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<!-- CSS -->
-    <link href="css/style.css" rel="stylesheet">
-    
-    <title>Music Therapist - Home</title>
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+    <!-- <link rel="shortcut icon" href=""> -->
+<!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Home Page</title>
   </head>
   <body>
- <!-- Top bar -->
- <section>
-    <div class="top-bar">
-      <ul class="contact-info">
-        <li><span><i class="phone fas fa-phone"></i>+353 87 614 8604</span></li>
-        <li><span><i class="fas fa-envelope"></i>info@melodicminds.ie</span></li>
-      </ul>
-      <ul class="social-info">
-        <li><a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a></li>
-        <li><a href="https://www.instragram.com"><i class="fab fa-instagram"></i></a></li>
-      </ul>
-    </div>
-    <!-- Navigation bar code goes here -->
-    <nav class="navbar nav-scroll">
-        <img src="img/logo.png" alt="Music Therapist Logo">
-        <ul class="nav-links">
-          <li class="active"><a href="index.html">Home</a></li>
-          <li nav-scroll><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="ok.html">OK</a></li>
+        <!-- Navigation bar code goes here -->
+      <header>
+          <div class="navbar">
+            <a href="index.html"><img class="logo" src="img/logo.png" alt="Music Therapist Logo"></a>
+            <ul class="links">
+              <li class="active"></li>><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="ok.html">OK</a></li>
+            </ul>
+            <a href="#" class="action_btn">Join Class</a>
+            <!-- Hamburger menu -->
+            <div class="toggle_btn">
+              <i id="bar" class="fa-solid fa-bars"></i>
+            </div>
+          </div>
 
-        </ul>
-        <!-- Hamburger menu for smartphones: adapted on the tutorial followed on https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci -->
-        <div class="burger">
-          <i class="fas fa-bars"></i>
-        </div>
-    </nav>
-    
-  </section>
+          <div class="dropdown_menu">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="contact.html" class="action_btn">Join Class</a></li>
+            </ul>
+          </div>
 
-    <section class="hero"><img src="img/class.webp" alt="">
-      <div class="hero-text">
-        <h2>Welcome to My Website</h2>
-        <p>We create beautiful and responsive websites</p>
-        <button>Get started</button>
-      </div>
-    </section>
-     
+          <section id="hero">
+            <h1>Welcome</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, <br> 
+              adipisicing elit. Labore aperiam cum ut aut 
+            </p>
+          </section>
+      </header>
+
       <section id="services">
         <div class="container pt-5">
           <div class="row">
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
-                <img class="card-img-top" src="img/017b25bfbcef4497a8a9f798a242f000.webp" alt="Service 1">
+                <img class="card-img-top" src="img/event.webp" alt="Service 1">
                 <div class="card-body">
                   <h3 class="card-title">MUSIC THERAPY ASSESSMENT</h3>
                   <p class="card-text">The beginning of therapy sessions typically start with an assessment phase so that the needs of 
@@ -93,7 +91,7 @@
             </div>
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
-                <img class="card-img-top" src="img/130c782673388151e5f1479317d80a38_JPG.webp" alt="Service 2">
+                <img class="card-img-top" src="img/happy.jpg" alt="Service 2">
                 <div class="card-body">
                   <h3 class="card-title">INDIVIDUAL & GROUP THERAPY SESSIONS</h3>
                   <p class="card-text">Sessions are created depending on the needs of the client and the flexibility of the facility. 
@@ -110,7 +108,7 @@
             </div>
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
-                <img class="card-img-top" src="img/Music Class.webp" alt="Service 3">
+                <img class="card-img-top" src="img/junior-class.webp" alt="Service 3">
                 <div class="card-body">
                   <h3 class="card-title">MUSIC THERAPY PRESENTATIONS</h3>
                   <p class="card-text">If you’re looking to gain more insight into Music Therapy and what a typical session looks like, 
@@ -128,319 +126,72 @@
           </div>
         </div>
       </section>
-      <!-- Services Section -->
-      <div class="services-container">
-        <div class="services-header">
-          <h2>Our Services</h2>
-          <div class="services-btns">
-            <button id="services-btn-1" class="active">Services</button>
-            <button id="services-btn-2">Private Referrals</button>
-          </div>
-        </div>
-        <div class="services-sections">
-          <div class="services-section services-section-1">
-            <div class="service-card">
-              <img src="img/017b25bfbcef4497a8a9f798a242f000.webp" alt="Service 1">
-              <h3>Music Therapy Assessment</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <a href="#">Learn more</a>
-              <div class="d-flex justify-content-center align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-outline-secondary">Book Now</button>
-                </div>
-              </div>
-            </div>
-            <div class="service-card">
-              <img src="img/130c782673388151e5f1479317d80a38_JPG.webp" alt="Service 2">
-              <h3>Music Therapy Presentations</h3>
-              <p>Information Evening about Music Therapy</p>
-              <a href="#">Learn more</a>
-              <div class="d-flex justify-content-center align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-outline-secondary">Book Now</button>
-                </div>
-              </div>
-            </div>
-            <div class="service-card">
-              <img src="img/happy-g3be552501_1920.jpg" alt="Service 3">
-              <h3>Music Therapy & Technology</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <a href="#">Learn more</a>
-              <div class="d-flex justify-content-center align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-outline-secondary">Book Now</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="services-section services-section-2 hidden">
-            <div class="service-card">
-              <img src="img/Man Playing Guitar.webp" alt="Service 4">
-              <h3>Individual Music Therapy</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <a href="#">Learn more</a>
-              <div class="d-flex justify-content-center align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-outline-secondary">Book Now</button>
-                </div>
-              </div>
-            </div>
-            <div class="service-card">
-              <img src="img/Music Class.webp" alt="Service 5">
-              <h3>Group Music Therapy</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <a href="#">Learn more</a>
-              <div class="d-flex justify-content-center align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-outline-secondary">Book Now</button>
-                </div>
-              </div>
-            </div>
-            <div class="service-card">
-              <img src="img/Piano B&W.webp" alt="Service 6">
-              <h3>Music Therapy Pilot</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <a href="#">Learn more</a>
-              <div class="d-flex justify-content-center align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-outline-secondary">Book Now</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      
-      <section id="about">
+
+
+          <!-- Footer -->
+      <footer class="footer">
         <div class="container">
           <div class="row">
-            <div class="col-md-6">
-              <img src="img/niamh.webp" class="img-fluid about-img" alt="Niamh">
-            </div>
-            <div class="col-md-6 section-about">
-              <h2>MY STORY</h2>
-              <h3>When Words Fail.... Music Speaks</h3>
-              <p>I’m Niamh, founder of Wembley Music Therapy Services. A HCPC registered Music Therapist based in North London - here to guide you through the services provided.</p>
-              <p>I truly care about my clients’ well-being and guarantee a service that is catered to the clients needs throughout individual and group music therapy sessions.</p>
-              <p>Since 2016, I have provided a number of therapeutic services from Ireland, specialising in Autistic Spectrum Disorder, Dementia, Communication Disorders and Intellectual &amp; Physical Disabilities.</p>
-              <p>Now located in Wembley, why not get in touch with me today for more information about individual and group music therapy sessions.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- FAQ Slideshow -->
-      <section class="faq-section">
-        <div class="faq-container">
-          <div class="faq-slide active">
-            <h3>What is music therapy?</h3>
-            <p>Music therapy is a type of therapy that uses music to address physical, emotional, cognitive, and social needs 
-              of individuals of all ages. It involves creating, singing, moving to, and/or listening to music under the guidance 
-              of a qualified music therapist.</p>
-          </div>
-          <div class="faq-slide">
-            <h3>Who can benefit from music therapy?</h3>
-            <p>Music therapy can benefit individuals of all ages and abilities, including those with developmental disabilities, 
-              mental health needs, neurological disorders, medical conditions, and individuals experiencing stress or life transitions.</p>
-          </div>
-          <div class="faq-slide">
-            <h3>What happens during a music therapy session?</h3>
-            <p>During a music therapy session, the music therapist will assess the individual's needs and develop a treatment plan using 
-              music interventions such as playing instruments, singing, songwriting, movement to music, and improvisation. Sessions can 
-              be provided one-on-one or in group settings.</p>
-          </div>
-        </div>
-        <div class="faq-navigation">
-          <button class="prev-btn">&lt;</button>
-          <button class="next-btn">&gt;</button>
-        </div>
-      </section>
-      
-
-      <section id="contact">
-        <h2>Contact Me</h2>
-        <div class="contact-container">
-          <div class="contact-info">
-            <h3>Get in touch</h3>
-            <p>If you have any questions or would like to book a session, please don't hesitate to contact me.</p>
-            <p>Email: info@wembleymusictherapy.com</p>
-            <p>Phone: 555-555-5555</p>
-            <button class="btn btn-primary">Join a Class</button>
-          </div>
-          <div class="contact-image">
-            <img src="img/Music Class.webp" alt="Contact">
-          </div>
-        </div>
-      </section>
-      <!-- Footer -->
-      <footer>
-        <div class="guitar-shape"></div>
-        <div class="footer-container">
-          <div class="row">
-            <div class="col-md-4 col-sm-6">
-              <h4>Address</h4>
-              <p>123 Music Therapy Street<br>London, UK</p>
-            </div>
-            <div class="col-md-4 col-sm-6">
-              <h4>Links</h4>
+            <div class="footer-col">
+              <h4>Melodic Minds</h4>
               <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">Contact</a></li>
               </ul>
             </div>
-            <div class="col-md-4 col-sm-12">
-              <h4>Contact</h4>
-              <p><i class="fas fa-phone"></i>   +353 87 614 8604<br><i class="fas fa-envelope"></i>   info@melodicminds.ie</p>
+
+            <!-- Second Column -->
+            <div class="footer-col">
+              <h1>Services</h1>
+              <ul>
+                <li><a href="">Course 1</a></li>
+                <li><a href="">Course 2</a></li>
+                <li><a href="">Course 3</a></li>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">Contact</a></li>
+              </ul>
+            </div>
+
+            <!-- Third Column -->
+            <div class="footer-col">
+              <h1>Follow</h1>
+              <div class="social-links">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+              </div>
             </div>
           </div>
         </div>
-      </footer>
+            <hr>
+              <!-- Copyrights -->
+              <div class="copyright">
+                <div class="col">
+                  <p>© 2023 Roibeard_Ruadhan All rights reserved.</p>
+                </div>
+              </div>
+          </div>
+        </footer>
+  <!-- End -->
 
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
       <script>
-        $(document).ready(function() {
-        $('.navbar-collapse').css('max-height', $(window).height() - $('.navbar-header').height() + 'px');
-      });
+          const toggleBtn = document.querySelector('.toggle_btn')
+          const toggleBtnIcon = document.querySelector('.toggle_btn i')
+          const dropDownMenu = document.querySelector('.dropdown_menu')
+
+          toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+              ? 'fa-solid fa-xmark'
+              : 'fa-solid fa-bars'
+          }
       </script>
-      
-    <script>
-// Get the FAQ slideshow container element
-const faqSlides = document.querySelectorAll('.faq-slide');
-const prevBtn = document.querySelector('.prev-btn');
-const nextBtn = document.querySelector('.next-btn');
-let slideIndex = 0;
-let slideInterval;
-
-function showSlide(n) {
-  // Reset the timer interval
-  clearInterval(slideInterval);
-
-  // Hide all slides
-  for (let i = 0; i < faqSlides.length; i++) {
-    faqSlides[i].classList.remove('active');
-    faqSlides[i].style.opacity = 0;
-  }
-
-  // Loop to the beginning if at end of slides
-  if (n >= faqSlides.length) {
-    slideIndex = 0;
-  } else if (n < 0) {
-    slideIndex = faqSlides.length - 1;
-  } else {
-    slideIndex = n;
-  }
-
-  // Show current slide
-  faqSlides[slideIndex].classList.add('active');
-  fadeIn(faqSlides[slideIndex]);
-
-  // Set timer interval to automatically move to the next slide every 5 seconds
-  slideInterval = setInterval(() => {
-    moveToNextSlide();
-  }, 5000);
-}
-
-function moveToNextSlide() {
-  showSlide(slideIndex + 1);
-}
-
-function moveToPrevSlide() {
-  showSlide(slideIndex - 1);
-}
-
-function fadeIn(element) {
-  let op = 0;
-  const timer = setInterval(function () {
-    if (op >= 1) clearInterval(timer);
-    element.style.opacity = op;
-    op += 0.1;
-  }, 50);
-}
-
-// Move to next slide on clicking next button
-nextBtn.addEventListener('click', moveToNextSlide);
-
-// Move to previous slide on clicking previous button
-prevBtn.addEventListener('click', moveToPrevSlide);
-
-// Show first slide and start timer interval
-showSlide(slideIndex);
-
-
-
-// Services button function
-
-
-const servicesBtn1 = document.getElementById("services-btn-1");
-const servicesBtn2 = document.getElementById("services-btn-2");
-
-servicesBtn1.addEventListener("click", function() {
-  showServices(1);
-  servicesBtn1.classList.add("active");
-  servicesBtn2.classList.remove("active");
-});
-
-servicesBtn2.addEventListener("click", function() {
-  showServices(2);
-  servicesBtn1.classList.remove("active");
-  servicesBtn2.classList.add("active");
-});
-
-function showServices(servicesSet) {
-  const servicesSection1 = document.querySelector(".services-section-1");
-  const servicesSection2 = document.querySelector(".services-section-2");
-
-  if (servicesSet === 1) {
-    servicesSection1.classList.remove("hidden");
-    servicesSection2.classList.add("hidden");
-  } else if (servicesSet === 2) {
-    servicesSection1.classList.add("hidden");
-    servicesSection2.classList.remove("hidden");
-  }
-}
-
-
-</script>
-
-<!-- Font awesome script -->
-<script src="https://kit.fontawesome.com/1705e36da1.js" crossorigin="anonymous"></script>
-<!-- dev.to script for hamburger menu for small screens -->
-<script>
-    const hamburger = document.querySelector(".burger");
-    const navMenu = document.querySelector(".nav-flex-container");
-    
-    hamburger.addEventListener("click", mobileMenu);
-    
-    function mobileMenu() {
-        hamburger.classList.toggle("active");
-        navMenu.classList.toggle("active");
-    }
-    // To close the hamburger menu when we click a link
-    const navLink = document.querySelectorAll(".nav-link");
-    
-    navLink.forEach(n => n.addEventListener("click", closeMenu));
-    
-    function closeMenu() {
-        hamburger.classList.remove("active");
-        navMenu.classList.remove("active");
-    }
-</script>
-<script>
-const topBar = document.querySelector('.top-bar');
-let prevScrollpos = window.pageYOffset;
-
-window.onscroll = function() {
-  let currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    topBar.style.top = "0";
-  } else {
-    topBar.style.top = "-50px";
-  }
-  prevScrollpos = currentScrollPos;
-}
-
-</script>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   </body>
 </html>
