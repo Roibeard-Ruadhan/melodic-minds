@@ -325,6 +325,7 @@ foooter .row {
 .footer-col {
     width: 33%;
     padding: 0 15px;
+    padding-left: 150px;
 }
 
 .footer-col ul {
@@ -392,10 +393,12 @@ foooter .row {
     opacity: 0.7;
 }
 
-.copyright {
-    align-items: center;
-    justify-content: center!important;
+.copyright p {
     color: #9796B0;
+    align-items: center;
+    align-content: center;
+    justify-content: center!important;
+    display: flex;
 }
 
 @media(max-width: 767px){
@@ -408,6 +411,7 @@ foooter .row {
 @media(max-width: 574px){
     .footer-col {
         width: 100%;
+        padding-left: 50px;
     }
 }
 
