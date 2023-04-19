@@ -196,6 +196,115 @@ section#hero {
     transition: all 0.2s ease-in-out;
   }
 
+
+/* FAQ Slideshow */
+/* FAQ Slideshow Styles */
+
+.faq-section {
+    background-color: #f7f7f7;
+    padding: 70px 0;
+    margin:30px 0 30px 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)), url('../img/treble.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .faq-container {
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .faq-slide {
+    display: none;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .faq-slide.active {
+    display: block;
+  }
+  
+  .faq-slide h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .faq-slide p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .faq-navigation {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+  }
+  
+  .prev-btn,
+  .next-btn {
+    background-color: #fff;
+    border: none;
+    color: #E7467F;
+    font-size: 24px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .prev-btn:hover,
+  .next-btn:hover {
+    background-color: #2C245B;
+    color:#fff;
+  }
+  
+  
+  @media only screen and (max-width: 768px) {
+    .faq-section {
+      padding: 30px 0;
+    }
+  
+    .faq-container {
+      padding: 0 10px;
+    }
+  
+    .faq-slide {
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    .faq-navigation {
+      margin: 10px auto;
+      padding: 0 10px;
+    }
+  }
+  
+  
+  @media screen and (max-width: 576px) {
+    .faq-section {
+      padding: 40px 10px;
+    }
+    .faq-slide {
+      font-size: 12px;
+    }
+  }
+  
+  
+  @media only screen and (max-width: 480px) {
+    .faq-section {
+      padding: 20px 0;
+    }
+  
+    .faq-slide {
+      padding: 5px;
+    }
+  }
+  
+
 /* FOOTER */
 
 .footer {

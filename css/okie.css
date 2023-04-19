@@ -226,11 +226,17 @@ body {
 
 .faq-section {
   background-color: #f7f7f7;
-  padding: 50px 0;
+  padding: 70px 0;
+  margin:30px 0 30px 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+  rgba(0, 0, 0, 0.5)), url('../img/treble.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .faq-container {
   display: flex;
+  color: #fff;
   flex-direction: column;
   align-items: center;
   max-width: 800px;
@@ -265,9 +271,9 @@ body {
 
 .prev-btn,
 .next-btn {
-  background-color: #E7467F;
+  background-color: #fff;
   border: none;
-  color: #fff;
+  color: #E7467F;
   font-size: 24px;
   padding: 10px 20px;
   cursor: pointer;
@@ -277,6 +283,7 @@ body {
 .prev-btn:hover,
 .next-btn:hover {
   background-color: #2C245B;
+  color:#fff;
 }
 
 
