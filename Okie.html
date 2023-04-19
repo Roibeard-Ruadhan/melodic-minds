@@ -26,6 +26,7 @@
 
 <!-- CSS -->
     <link href="css/okie.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
     
     <title>Music Therapist - Home</title>
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
@@ -128,6 +129,29 @@
           </div>
         </div>
       </section>
+
+      <!-- Video slide section -->
+      <div class="page-wrapper">
+        <div id="slider" class="cycle-slideshow" data-cycle-timeout="6000" data-cycle-fx="scrollHorz" data-cycle-slides=">.slide">
+          <!-- slide -->
+          <div class="slide">
+            <img src="http://via.placeholder.com/1600x650" width="600" height="650" class="slide-image" alt="">
+          </div>
+          <!-- slide -->
+      
+          <div class="slide">
+              <div class="video-wrap">
+                <iframe id="player" width="560" height="315" src="https://www.youtube.com/embed/Lscb4SL58X4?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+          <!-- slide -->
+      
+        </div>
+        <!-- slider -->
+      
+      </div>
+      <!-- page-wrapper -->
+
       <!-- Services Section -->
       <div class="services-container">
         <div class="services-header">
@@ -297,6 +321,29 @@
           </div>
         </div>
       </footer>
+
+      <script>
+          var player
+            function onYouTubeIframeAPIReady() {
+              player = new YT.Player('player', {
+                events: {
+                  'onStateChange': onPlayerStateChange,
+                }
+              });
+            }
+
+            function onPlayerStateChange(event) {
+              if (event.data == YT.PlayerState.PLAYING) {
+                $('#slider').cycle('pause');
+              }
+              if (event.data == YT.PlayerState.ENDED){
+                $('#slider').cycle('resume');
+              }
+            }
+            function stopVideo() {
+              player.stopVideo();
+            }
+      </script>
 
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
       <script>
