@@ -26,7 +26,7 @@
 
 <!-- CSS -->
     <link href="css/okie.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/index.css">
+    <!-- <link rel="stylesheet" href="css/index.css"> -->
     
     <title>Music Therapist - Home</title>
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
@@ -322,28 +322,6 @@
         </div>
       </footer>
 
-      <script>
-          var player
-            function onYouTubeIframeAPIReady() {
-              player = new YT.Player('player', {
-                events: {
-                  'onStateChange': onPlayerStateChange,
-                }
-              });
-            }
-
-            function onPlayerStateChange(event) {
-              if (event.data == YT.PlayerState.PLAYING) {
-                $('#slider').cycle('pause');
-              }
-              if (event.data == YT.PlayerState.ENDED){
-                $('#slider').cycle('resume');
-              }
-            }
-            function stopVideo() {
-              player.stopVideo();
-            }
-      </script>
 
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
       <script>

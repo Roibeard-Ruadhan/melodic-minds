@@ -216,6 +216,73 @@
               : 'fa-solid fa-bars'
           }
       </script>
+
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      
+      <script>
+// Get the FAQ slideshow container element
+const faqSlides = document.querySelectorAll('.faq-slide');
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
+let slideIndex = 0;
+let slideInterval;
+
+function showSlide(n) {
+  // Reset the timer interval
+  clearInterval(slideInterval);
+
+  // Hide all slides
+  for (let i = 0; i < faqSlides.length; i++) {
+    faqSlides[i].classList.remove('active');
+    faqSlides[i].style.opacity = 0;
+  }
+
+  // Loop to the beginning if at end of slides
+  if (n >= faqSlides.length) {
+    slideIndex = 0;
+  } else if (n < 0) {
+    slideIndex = faqSlides.length - 1;
+  } else {
+    slideIndex = n;
+  }
+
+  // Show current slide
+  faqSlides[slideIndex].classList.add('active');
+  fadeIn(faqSlides[slideIndex]);
+
+  // Set timer interval to automatically move to the next slide every 5 seconds
+  slideInterval = setInterval(() => {
+    moveToNextSlide();
+  }, 10000);
+}
+
+function moveToNextSlide() {
+  showSlide(slideIndex + 1);
+}
+
+function moveToPrevSlide() {
+  showSlide(slideIndex - 1);
+}
+
+function fadeIn(element) {
+  let op = 0;
+  const timer = setInterval(function () {
+    if (op >= 1) clearInterval(timer);
+    element.style.opacity = op;
+    op += 0.1;
+  }, 50);
+}
+
+// Move to next slide on clicking next button
+nextBtn.addEventListener('click', moveToNextSlide);
+
+// Move to previous slide on clicking previous button
+prevBtn.addEventListener('click', moveToPrevSlide);
+
+// Show first slide and start timer interval
+showSlide(slideIndex);
+      </script>
+
+
   </body>
 </html>
