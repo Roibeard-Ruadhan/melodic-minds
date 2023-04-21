@@ -35,7 +35,7 @@ a {
 }
 
 a:hover {
-    color: blueviolet;
+    color: #E7467F;
     text-decoration: none;
 }
 /* Header */
@@ -69,7 +69,7 @@ header {
 }
 
 .action_btn {
-    background-color: blueviolet;
+    background-color: #E7467F;
     color: #fff;
     padding: 0.5rem 1rem;
     border: none;
@@ -83,7 +83,7 @@ header {
 
 .action_btn:hover {
     scale: 1.05;
-    color: #fff;
+    color: #261f58;
 }
 
 .action_btn:active {
@@ -176,12 +176,24 @@ section#hero {
     transform: translateY(-10px);
     transition: all 0.2s ease-in-out;
 }
-/* 
-  .card-body h3,
-  .card-body p {
-    height: 100%!important;
-  } */
+.service-btn {
+  background-color: #261f58;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: scale 0.2 ease;
+}
 
+.service-btn:hover {
+  scale: 1.1;
+  color: #261f58;
+  background-color: #E7467F;
+  border: 2px;
+  border-color: #261f58;
+  border: 1px;
+}
   
   /* Set a fixed height for the card images */
   .card-img-top {
@@ -310,7 +322,7 @@ section#hero {
 /* FOOTER */
 
 .footer {
-    background-color: #2C245B;
+    background-color: #261f58;
     padding: 70px 0;
 }
 
