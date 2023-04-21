@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta content -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Music studio offering healing through Music therapy by therapist Niamh Corkery in Limerick & 
+    Tipperary, Ireland">
+    <meta name="keywords" content="music therapy, music studio, music classes, music, healing, trauma, art, niamh corkery, limerick, 
+    tipperary, ireland, therapist, therapy, instruments, playing piano, guitar, singing, love, heart, comfort, health, qualified music therapist, 
+    experienced, mental health, creative expression, stress relief, personal growth, trauma recovery, children and adults, emotional well-being,
+    mindfulness, self-discovery, non-verbal communication, professional services">
+    <meta name="author" content="roibeard_ruadhan">
+      <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- Bootstrap JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/e7d40c6c15.js" crossorigin="anonymous"></script>
+
+<!-- CSS -->
+    <link href="css/test.css" rel="stylesheet">
+    
+    <title>Music Therapist - Home</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  </head>
+  <body>
+
+    <header>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="img/Man Playing Guitar.webp" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/Music Class.webp" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/happy-g3be552501_1920.jpg" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </header>
+
+    <header>
+    <div class="top-bar">
+        <div class="contact-info">
+            <span class="email">email@example.com</span>
+            <span class="phone">555-555-5555</span>
+            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="img/logo.png" alt="Music Therapist Logo">
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
+    </header>
+    <section class="hero">
+      <div class="hero-text">
+        <h2>Welcome to My Website</h2>
+        <p>We create beautiful and responsive websites</p>
+        <button>Get started</button>
+      </div>
+    </section>
+    <section>
+      <h2>About Us</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id bibendum nisl. Nunc euismod auctor enim, sit amet pulvinar augue tincidunt vitae. Sed vel lacus non urna suscipit rhoncus. Donec at nibh at elit sodales varius eu id elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+    </section>
+    <section>
+      <h2>Our Services</h2>
+      <ul>
+        <li>Web design</li>
+        <li>Web development</li>
+        <li>Search engine optimization</li>
+      </ul>
+    </section>
+    <footer>
+      <p>&copy; 2021 My Website</p>
+    </footer>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('.nav-links');
+
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+  });
+});
+</script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script>
+      //   $(document).ready(function() {
+      //   $('.navbar-collapse').css('max-height', $(window).height() - $('.navbar-header').height() + 'px');
+      // });
+      window.addEventListener('scroll', function() {
+  var nav = document.querySelector('nav');
+  if (window.pageYOffset > 0) {
+    nav.classList.add('sticky');
+  } else {
+    nav.classList.remove('sticky');
+  }
+});
+      </script>
+  </body>
+</html>
