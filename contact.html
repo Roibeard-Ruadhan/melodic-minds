@@ -31,8 +31,7 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Music Therapist - Contact</title>
   </head>
-<body>
-  <header>
+  <body>
     <!-- Top bar -->
     <!-- <div class="top-bar">
       <ul class="contact-info">
@@ -45,34 +44,33 @@
       </ul>
     </div> -->
     <!-- Navigation bar code goes here -->
-    <nav>
-      <header>
-        <div class="navbar">
-          <a href="index.html"><img class="logo" src="img/logo.png" alt="Music Therapist Logo"></a>
-          <ul class="links">
-            <li></li><a href="index.html">Home</a></li>
-            <li class="active"><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Test</a></li>
-          </ul>
-          <a href="#" class="action_btn">Join Class</a>
-          <!-- Hamburger menu -->
-          <div class="toggle_btn">
-            <i id="bar" class="fa-solid fa-bars"></i>
-          </div>
+    <header>
+      <div class="navbar other-nav">
+        <a href="index.html"><img class="logo" src="img/logo.png" alt="Music Therapist Logo"></a>
+        <ul class="links contact-nav">
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Test</a></li>
+        </ul>
+        <a href="#" class="action_btn">Join Class</a>
+        <!-- Hamburger menu -->
+        <div class="toggle_btn">
+          <i id="bar" class="fa-solid fa-bars"></i>
         </div>
+      </div>
 
-        <div class="dropdown_menu">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#" class="action_btn">Join Class</a></li>
-          </ul>
-        </div>
-    </header>
+      <div class="dropdown_menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#" class="action_btn">Join Class</a></li>
+        </ul>
+      </div>
+  </header>
 
 	<section class="ftco-section">
 		<div class="container">
@@ -99,7 +97,7 @@
 										<div class="col-md-4">
 											<div class="dbox w-100 d-flex align-items-start">
 						        		<div class="text">
-							            <p><span>Email:</span> <a href="mailto:info@yoursite.com">info@melodicminds.ie</a></p>
+							            <p><span>Email:</span> <a href="mailto:info@melodicminds.ie">info@melodicminds.ie</a></p>
 							          </div>
 						          </div>
 										</div>
@@ -154,77 +152,81 @@
 		</div>
 	</section>
 
-          <!-- Footer -->
-          <footer class="footer">
-            <div class="container">
-              <div class="row">
-                <div class="footer-col">
-                  <h4>Melodic Minds</h4>
-                  <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Contact</a></li>
-                  </ul>
-                </div>
-    
-                <!-- Second Column -->
-                <div class="footer-col">
-                  <h4>Contact</h4>
-                  <ul>
-                    <li><a href="#"><i class="fas fa-phone"></i> Ph:555671342</a></li>
-                      <li><a href="#"><i class="fas fa-map-marker-alt"></i> Address: Tipperary</a></li>
-                      <li><a href="#"><i class="fas fa-envelope-open"></i> info@melodicminds.ie</a></li>
-                  </ul>
-                </div>
-             
-                <!-- Third Column -->
-                <div class="footer-col">
-                  <h4>Services</h4>
-                  <ul>
-                    <li><a href="#">Course 1</a></li>
-                    <li><a href="#">Course 2</a></li>
-                    <li><a href="#">Course 3</a></li>
-                    <li><a href="#">Course 4</a></li>
-                    <li><a href="#">Course 5</a></li>
-                  </ul>
-                </div>
-                
-    
-                <!-- Fourth Column - Social media links -->
-                <div class="footer-col">
-                  <h4>Follow</h4>
-                  <div class="social-links">
-                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://www.instragram.com/"><i class="fa-brands fa-instagram"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </footer>
-          <!-- Copyrights -->
-          <div class="copyright">
-            <div class="col">
-              <p>©2023 Roibeard_Ruadhan All rights reserved.</p>
-            </div>
-          </div>
-      <!-- End -->
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>Melodic Minds</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
 
-  <script>
-    const hamburger = document.getElementById("hamburger");
-    const navUL = document.querySelector("nav ul");
-    
-    hamburger.addEventListener("click", () => {
-      navUL.classList.toggle("show");
-    });
-    </script>
+        <!-- Second Column -->
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="#"><i class="fas fa-phone"></i> Ph:555671342</a></li>
+              <li><a href="#"><i class="fas fa-map-marker-alt"></i> Address: Tipperary</a></li>
+              <li><a href="#"><i class="fas fa-envelope-open"></i> info@melodicminds.ie</a></li>
+          </ul>
+        </div>
+      
+        <!-- Third Column -->
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">Course 1</a></li>
+            <li><a href="#">Course 2</a></li>
+            <li><a href="#">Course 3</a></li>
+            <li><a href="#">Course 4</a></li>
+            <li><a href="#">Course 5</a></li>
+          </ul>
+        </div>
+        
 
-<script src="js/jquery.min.js"></script>
-<script src="js/popper.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.validate.min.js"></script>
-<script src="js/main.js"></script>
-</body>
+        <!-- Fourth Column - Social media links -->
+        <div class="footer-col">
+          <h4>Follow</h4>
+          <div class="social-links">
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instragram.com/"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- Copyrights -->
+  <div class="copyright">
+    <div class="col">
+      <p>©2023 Roibeard_Ruadhan All rights reserved.</p>
+    </div>
+  </div>
+<!-- End -->
+
+<script>
+  const toggleBtn = document.querySelector('.toggle_btn')
+  const toggleBtnIcon = document.querySelector('.toggle_btn i')
+  const dropDownMenu = document.querySelector('.dropdown_menu')
+
+  toggleBtn.onclick = function () {
+    dropDownMenu.classList.toggle('open')
+    const isOpen = dropDownMenu.classList.contains('open')
+
+    toggleBtnIcon.classList = isOpen
+      ? 'fa-solid fa-xmark'
+      : 'fa-solid fa-bars'
+  }
+</script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+
+  </body>
 </html>

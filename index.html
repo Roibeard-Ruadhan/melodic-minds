@@ -34,10 +34,10 @@
   <body>
         <!-- Navigation bar code goes here -->
       <header class="hero">
-          <div class="navbar">
+          <div class="navbar text-light">
             <a href="index.html"><img class="logo" src="img/logo.png" alt="Music Therapist Logo"></a>
             <ul class="links">
-              <li class="active"></li><a href="index.html">Home</a></li>
+              <li class="active"><a href="index.html">Home</a></li>
               <li><a href="#">About</a></li>
               <li><a href="#">Services</a></li>
               <li><a href="#">FAQ</a></li>
@@ -212,24 +212,24 @@
 
 
 
-      <script>
-          const toggleBtn = document.querySelector('.toggle_btn')
-          const toggleBtnIcon = document.querySelector('.toggle_btn i')
-          const dropDownMenu = document.querySelector('.dropdown_menu')
+<script>
+    const toggleBtn = document.querySelector('.toggle_btn')
+    const toggleBtnIcon = document.querySelector('.toggle_btn i')
+    const dropDownMenu = document.querySelector('.dropdown_menu')
 
-          toggleBtn.onclick = function () {
-            dropDownMenu.classList.toggle('open')
-            const isOpen = dropDownMenu.classList.contains('open')
+    toggleBtn.onclick = function () {
+      dropDownMenu.classList.toggle('open')
+      const isOpen = dropDownMenu.classList.contains('open')
 
-            toggleBtnIcon.classList = isOpen
-              ? 'fa-solid fa-xmark'
-              : 'fa-solid fa-bars'
-          }
-      </script>
+      toggleBtnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+    }
+</script>
 
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-      
-      <script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+<script>
 // Get the FAQ slideshow container element
 const faqSlides = document.querySelectorAll('.faq-slide');
 const prevBtn = document.querySelector('.prev-btn');

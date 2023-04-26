@@ -29,7 +29,7 @@ li {
     list-style: none;
 }
 
-a {
+.navbar a {
     text-decoration: none;
     color: #fff;
     font-size: 1rem;
@@ -452,6 +452,18 @@ foooter .row {
 .img-contact {
   background-size: cover;
   margin-bottom: 2rem;
+  min-height: 28rem;
+}
+
+.other-nav a {
+  color: #000 !important;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.other-nav a:hover {
+  color: #E7467F!important;
+  text-decoration: none;
 }
 
 @media (max-width: 600px) {
