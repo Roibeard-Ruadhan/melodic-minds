@@ -19,17 +19,22 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- jQuery -->
+    <link  href="https://code.jquery.com/jquery-3.6.0.min.js" />
 <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/e7d40c6c15.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8848882185.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<!-- CSS -->
-    <link href="css/style.css" rel="stylesheet">
+
+    <!-- <link rel="shortcut icon" href=""> -->
+<!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
     <title>Music Therapist - Contact</title>
   </head>
 <body>
   <header>
     <!-- Top bar -->
-    <div class="top-bar">
+    <!-- <div class="top-bar">
       <ul class="contact-info">
         <li><span><i class="phone fas fa-phone"></i>+353 87 614 8604</span></li>
         <li><span><i class="fas fa-envelope"></i>info@melodicminds.ie</span></li>
@@ -38,60 +43,174 @@
         <li><a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a></li>
         <li><a href="https://www.instragram.com"><i class="fab fa-instagram"></i></a></li>
       </ul>
-    </div>
+    </div> -->
     <!-- Navigation bar code goes here -->
     <nav>
-      <a href="index.html"><img src="img/logo.png" alt="Music Therapist Logo"></a>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li class="active"></liclass><a href="contact.html">Contact</a></li>
-        </ul>
-        <!-- Hamburger menu for smartphones: adapted on the tutorial followed on https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci -->
-        <div class="burger">
-          <i class="fas fa-bars"></i>
+      <header>
+        <div class="navbar">
+          <a href="index.html"><img class="logo" src="img/logo.png" alt="Music Therapist Logo"></a>
+          <ul class="links">
+            <li></li><a href="index.html">Home</a></li>
+            <li class="active"><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Test</a></li>
+          </ul>
+          <a href="#" class="action_btn">Join Class</a>
+          <!-- Hamburger menu -->
+          <div class="toggle_btn">
+            <i id="bar" class="fa-solid fa-bars"></i>
+          </div>
         </div>
-    </nav>
-  </header>
-  <main>
-    <section class="contact-section">
-      <div class="contact-form">
-        <h2>Contact Us</h2>
-        <form>
-          <label for="name">Name</label> <input type="text" id="name" name="name" placeholder="Enter your name" required=""> <label for="email">Email</label> <input type="email" id="email" name="email" placeholder="Enter your email" required=""> <label for="message">Message</label> 
-          <textarea id="message" name="message" placeholder="Enter your message" required=""></textarea> <button type="submit">Send</button>
-        </form>
-      </div>
-      <div class="contact-image"><img src="img/Music%20Class.webp" alt="Contact Image"></div>
-    </section>
-  </main>
-  <!-- Footer -->
-  <footer>
-    <div class="guitar-shape"></div>
-    <div class="footer-container">
-      <div class="row">
-        <div class="col-md-4 col-sm-6">
-          <h4>Address</h4>
-          <p>123 Music Therapy Street<br>London, UK</p>
-        </div>
-        <div class="col-md-4 col-sm-6">
-          <h4>Links</h4>
+
+        <div class="dropdown_menu">
           <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#" class="action_btn">Join Class</a></li>
           </ul>
         </div>
-        <div class="col-md-4 col-sm-12">
-          <h4>Contact</h4>
-          <p><i class="fas fa-phone"></i>   +353 87 614 8604<br><i class="fas fa-envelope"></i>   info@melodicminds.ie</p>
-        </div>
-      </div>
-    </div>
-  </footer>
+    </header>
+
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<h2 class="heading-section">Contact</h2>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-md-12">
+					<div class="wrapper">
+						<div class="row no-gutters">
+							<div class="col-lg-6">
+								<div class="contact-wrap w-100 p-md-5 p-4">
+									<h3>Contact us</h3>
+									<div class="row mb-4">
+										<div class="col-md-4">
+											<div class="dbox w-100 d-flex align-items-start">
+						        		<div class="text">
+							            <p><span>Address:</span> Tipperary / Limerick</p>
+							          </div>
+						          </div>
+										</div>
+										<div class="col-md-4">
+											<div class="dbox w-100 d-flex align-items-start">
+						        		<div class="text">
+							            <p><span>Email:</span> <a href="mailto:info@yoursite.com">info@melodicminds.ie</a></p>
+							          </div>
+						          </div>
+										</div>
+										<div class="col-md-4">
+											<div class="dbox w-100 d-flex align-items-start">
+						        		<div class="text">
+							            <p><span>Phone:</span> <a href="tel://1234567920">+ 5555 2355 98</a></p>
+							          </div>
+						          </div>
+										</div>
+									</div>
+									<form method="POST" id="contactForm" name="contactForm" class="contactForm">
+										<div class="row">
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="text" class="form-control" name="name" id="name" placeholder="Name">
+												</div>
+											</div>
+											<div class="col-md-12"> 
+												<div class="form-group">
+													<input type="email" class="form-control" name="email" id="email" placeholder="Email">
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Create a message here"></textarea>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="submit" value="Send Message" class="btn btn-primary">
+													<div class="submitting"></div>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="col-lg-6 d-flex align-items-stretch">
+								<div class="info-wrap w-100 p-5 img img-contact" style="background-image: url(img/play-piano.jpg);">
+			          </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+          <!-- Footer -->
+          <footer class="footer">
+            <div class="container">
+              <div class="row">
+                <div class="footer-col">
+                  <h4>Melodic Minds</h4>
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
+                </div>
+    
+                <!-- Second Column -->
+                <div class="footer-col">
+                  <h4>Contact</h4>
+                  <ul>
+                    <li><a href="#"><i class="fas fa-phone"></i> Ph:555671342</a></li>
+                      <li><a href="#"><i class="fas fa-map-marker-alt"></i> Address: Tipperary</a></li>
+                      <li><a href="#"><i class="fas fa-envelope-open"></i> info@melodicminds.ie</a></li>
+                  </ul>
+                </div>
+             
+                <!-- Third Column -->
+                <div class="footer-col">
+                  <h4>Services</h4>
+                  <ul>
+                    <li><a href="#">Course 1</a></li>
+                    <li><a href="#">Course 2</a></li>
+                    <li><a href="#">Course 3</a></li>
+                    <li><a href="#">Course 4</a></li>
+                    <li><a href="#">Course 5</a></li>
+                  </ul>
+                </div>
+                
+    
+                <!-- Fourth Column - Social media links -->
+                <div class="footer-col">
+                  <h4>Follow</h4>
+                  <div class="social-links">
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instragram.com/"><i class="fa-brands fa-instagram"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+          <!-- Copyrights -->
+          <div class="copyright">
+            <div class="col">
+              <p>©2023 Roibeard_Ruadhan All rights reserved.</p>
+            </div>
+          </div>
+      <!-- End -->
 
   <script>
     const hamburger = document.getElementById("hamburger");
@@ -101,5 +220,11 @@
       navUL.classList.toggle("show");
     });
     </script>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

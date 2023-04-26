@@ -9,8 +9,9 @@ body {
     line-height: 1.5;
     font-family: 'Poppins', sans-serif;
 }
-  
-header {
+
+
+.hero {
     height: 100vh;
     background-color: #000;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3),
@@ -447,10 +448,16 @@ foooter .row {
     justify-content: center;
   }
 
+/* Contact Page */
+.img-contact {
+  background-size: cover;
+  margin-bottom: 2rem;
+}
+
 @media (max-width: 600px) {
     footer .row{
         flex-direction: column;
-        padding: 20px 30px;
+        padding: 10px 20px;
     }
     footer .footer-col ul{
         margin-left: 20px;
@@ -487,6 +494,9 @@ foooter .row {
   }
 
 @media(max-width: 576px) {
+    .navbar {
+      padding: 0;
+    }
     .dropdown_menu {
         left: 2rem;
         width: unset;
