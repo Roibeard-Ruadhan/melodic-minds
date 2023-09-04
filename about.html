@@ -15,20 +15,23 @@
       <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-  <!-- Bootstrap JavaScript -->
+<!-- Bootstrap JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- jQuery -->
+    <link  href="https://code.jquery.com/jquery-3.6.0.min.js" />
 <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/e7d40c6c15.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8848882185.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<!-- CSS -->
-    <link href="css/style.css" rel="stylesheet">
+<!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
     <title>Music Therapist - About</title>
-  </head>
 <body>
+
     <!-- Top bar -->
-    <div class="top-bar">
+    <!-- <div class="top-bar">
       <ul class="contact-info">
         <li><span><i class="phone fas fa-phone"></i>+353 87 614 8604</span></li>
         <li><span><i class="fas fa-envelope"></i>info@melodicminds.ie</span></li>
@@ -37,22 +40,36 @@
         <li><a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a></li>
         <li><a href="https://www.instragram.com"><i class="fab fa-instagram"></i></a></li>
       </ul>
-    </div>
-    <!-- Navigation bar code goes here -->
-    <nav>
-      <a href="index.html"><img src="img/logo.png" alt="Music Therapist Logo"></a>
-         <ul>
-           <li><a href="index.html">Home</a></li>
-           <li class="active"><a href="about.html">About</a></li>
-           <li><a href="services.html">Services</a></li>
-           <li><a href="faq.html">FAQ</a></li>
-           <li><a href="contact.html">Contact</a></li>
-         </ul>
-         <!-- Hamburger menu for smartphones: adapted on the tutorial followed on https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci -->
-        <div class="burger">
-          <i class="fas fa-bars"></i>
-        </div>
-       </nav>
+    </div> -->
+
+       <!-- Navigation bar code goes here -->
+      <header class="">
+          <div class="navbar other-nav">
+            <a href="index.html"><img class="logo" src="img/logo.png" alt="Music Therapist Logo"></a>
+            <ul class="links">
+              <li><a href="index.html">Home</a></li>
+              <li class="active"><a href="">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <!-- <li><a href="">Services</a></li>
+              <li><a href="">FAQ</a></li>
+              <li><a href="">Test</a></li> -->
+            </ul>
+            <a href="#" class="action_btn">Join Class</a>
+            <!-- Hamburger menu -->
+            <div class="toggle_btn">
+              <i id="bar" class="fa-solid fa-bars"></i>
+            </div>
+          </div>
+
+          <div class="dropdown_menu">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#" class="action_btn">Join Class</a></li>
+            </ul>
+          </div>
 
   <!-- About Section -->
   <section id="about">
