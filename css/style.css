@@ -10,7 +10,6 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-
 .hero {
     height: 100vh;
     background-color: #000;
@@ -307,8 +306,7 @@ section#hero {
       font-size: 12px;
     }
   }
-  
-  
+    
   @media only screen and (max-width: 480px) {
     .faq-section {
       padding: 20px 0;
@@ -319,7 +317,6 @@ section#hero {
     }
   }
   
-
 /* FOOTER */
 
 .footer {
@@ -429,7 +426,6 @@ foooter .row {
     }
 }
 
-
 /* Services Page */
 
 .heading-secondary {
@@ -479,9 +475,6 @@ foooter .row {
         width: 100%;
      }
 }
-
-
-  
 
 /* Responisive Design */
 
